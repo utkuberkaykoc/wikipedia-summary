@@ -11,11 +11,15 @@ async function getSummary(topic, lang = "en") {
     const url = `https://${lang}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(topic)}`;
     const response = await fetch(url);
 
+    const data = await response.json();
+
+    if (data?.title === "Not found.") {
+      throw new Error("Topic not found on Wikipedia. Please try another search term.");
+    }
+    
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
-
-    const data = await response.json();
 
     return {
       title: data.title,
