@@ -1,0 +1,50 @@
+{
+  "name": "wikipedia-summary",
+  "version": "1.0.0",
+  "description": "A simple Node.js wrapper to fetch Wikipedia summaries in multiple languages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/utkuberkaykoc/wikipedia-summary.git"
+  },
+  "keywords": [
+    "wikipedia",
+    "wiki",
+    "summary",
+    "api",
+    "multi-language",
+    "knowledge",
+    "encyclopedia",
+    "information",
+    "fetch",
+    "data",
+    "article",
+    "rest-api",
+    "content",
+    "search",
+    "metadata",
+    "open-data",
+    "education",
+    "history",
+    "science",
+    "technology",
+    "culture",
+    "biography",
+    "facts",
+    "reference",
+    "trivia",
+    "public-api",
+    "lightweight",
+    "simple",
+    "text-extract",
+    "web-scraper"
+  ],
+  "author": "Utku Berkay Koç",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}
